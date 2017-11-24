@@ -16,7 +16,7 @@ jobs:
 
       - run:
           name: Build image
-          command: docker build -t shwanton/circleci
+          command: docker build -t shwanton/circleci .
 
       - deploy:
           name: Push image
