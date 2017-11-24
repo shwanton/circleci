@@ -1,8 +1,9 @@
-FROM node:9.2-slim
+FROM ubuntu:bionic
 
 RUN apt-get update -qq
 RUN apt-get install -qqy \
 apt-utils \
+git \
 python-dev
 
 # Install Docker & Docker Compose
