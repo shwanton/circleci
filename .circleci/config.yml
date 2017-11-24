@@ -24,7 +24,7 @@ jobs:
 
 workflows:
   version: 2
-  deploy:
+  deploy_docker_hub:
     jobs:
       - deploy:
           context: org-global  
