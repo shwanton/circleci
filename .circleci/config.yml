@@ -16,11 +16,11 @@ jobs:
 
       - run:
           name: Build image
-          command: docker build -t shwanton/circleci:$CIRCLE_BRANCH .
+          command: docker build -t shwanton/circleci .
 
       - deploy:
           name: Push image
-          command: docker push shwanton/circleci:$CIRCLE_BRANCH
+          command: docker push shwanton/circleci
 
 workflows:
   version: 2
