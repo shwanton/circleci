@@ -13,3 +13,5 @@ RUN chmod +x /usr/local/bin/docker-compose
 # Install Heroku CLI
 RUN wget -qO- https://cli-assets.heroku.com/install-ubuntu.sh | sh
 ENV PATH $PATH:/usr/local/heroku/bin
+
+ENTRYPOINT ['./bin/setup-heroku']
