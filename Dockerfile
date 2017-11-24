@@ -1,8 +1,10 @@
-FROM ubuntu:bionic
+FROM ubuntu:zesty
 
 RUN apt-get update -qq
 RUN apt-get install -qqy \
 apt-utils \
+curl \
+wget \
 git \
 python-dev
 
